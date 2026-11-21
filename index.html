@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Lili Gewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="announce">Complimentary shipping on orders ₱8,700+ · Made to be kept</div>
+    <header class="top">
+      <div class="wrap">
+        <div class="hbar">
+          <div></div>
+          <a class="logo" href="#home" aria-label="Lili Gewelry home">LILI GEWELRY</a>
+          <div class="icons">
+            <button class="ibtn" id="btnSearch" aria-label="Search">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="6.5" />
+                <path d="M16 16l4.5 4.5" />
+              </svg>
+            </button>
+            <button class="ibtn" id="btnUser" aria-label="Account">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4.5 20c.8-4 4-6 7.500-6s6.700 2 7.500 6" />
+              </svg>
+            </button>
+            <button class="cartbtn" id="btnWish" aria-label="Saved pieces">
+              <span class="ibtn"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 20s-7.500-4.600-7.500-10A4.300 4.300 0 0112 7.600 4.300 4.300 0 0119.500 10c0 5.400-7.500 10-7.500 10z"
+                  /></svg></span
+              ><span class="badge" id="wishCount">0</span>
+            </button>
+            <button class="cartbtn" id="btnCart" aria-label="Open cart">
+              <span class="ibtn"
+                ><svg viewBox="0 0 24 24">
+                  <path d="M5 8h14l-1 12H6L5 8z" />
+                  <path d="M9 8V6.500a3 3 0 016 0V8" /></svg></span
+              ><span class="badge" id="cartCount">0</span>
+            </button>
+          </div>
+        </div>
+        <nav class="menu" id="menu" aria-label="Main">
+          <a href="#home" data-g="home">Home</a><a href="#shop" data-g="shop">Shop</a
+          ><a href="#make-it-yours" data-g="custom">Customize</a><a href="#about" data-g="about">About</a
+          ><a href="#support" data-g="support">Support</a><a href="#contact" data-g="contact">Contact us</a>
+        </nav>
+      </div>
+    </header>
+    <div id="sub"></div>
+    <main id="app"></main>
+    <footer>
+      <div class="wrap">
+        <div class="fgrid">
+          <div>
+            <div class="logo">LILI GEWELRY</div>
+            <p>
+              Modern heirlooms in recycled gold and sterling silver. Designed slowly, finished by hand and
+              made to be worn for a lifetime.
+            </p>
+            <p style="margin-top: 14px">Makati City, Metro Manila<br />hello@liligewelry.com</p>
+          </div>
+          <div>
+            <h5>Explore</h5>
+            <ul>
+              <li><a href="#rings">Rings</a></li>
+              <li><a href="#necklaces">Necklaces</a></li>
+              <li><a href="#bracelets">Bracelets</a></li>
+              <li><a href="#earrings">Earrings</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Make it yours</h5>
+            <ul>
+              <li><a href="#engraving">Engraving</a></li>
+              <li><a href="#personalize">Personalize</a></li>
+              <li><a href="#make-it-yours">Gifting</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Our world</h5>
+            <ul>
+              <li><a href="#story">Our story</a></li>
+              <li><a href="#mission">Mission &amp; vision</a></li>
+              <li><a href="#reviews">Client reviews</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Client care</h5>
+            <ul>
+              <li><a href="#faqs">FAQs</a></li>
+              <li><a href="#care">Jewelry care</a></li>
+              <li><a href="#shipping">Shipping &amp; returns</a></li>
+              <li><a href="#size">Size guide</a></li>
+              <li><a href="#contact">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="fbot">
+          <span>© 2026 Lili Gewelry. All prices in Philippine pesos (₱)</span
+          ><span>Privacy · Terms · Accessibility</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="scrim" id="scrim"></div>
+    <aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="dh">
+        <h3>Your cart</h3>
+        <button class="x" id="closeCart" aria-label="Close cart">×</button>
+      </div>
+      <div class="items" id="items"></div>
+      <div class="df" id="dfoot"></div>
+    </aside>
+    <aside class="drawer" id="wdrawer" aria-label="Saved pieces" aria-hidden="true">
+      <div class="dh">
+        <h3>Saved pieces</h3>
+        <button class="x" id="closeWish" aria-label="Close saved pieces">×</button>
+      </div>
+      <div class="items" id="witems"></div>
+    </aside>
+    <div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
